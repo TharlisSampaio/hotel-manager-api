@@ -1,0 +1,25 @@
+# Binários para programas e plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Binário de teste, construído com 'go test -c'
+*.test
+
+# Saída da ferramenta de cobertura do go (coverage)
+*.out
+*.prof
+
+# Workspace do Go (vs. Go 1.18+)
+go.work.sum
+
+# Arquivos de IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Diretório vendor (Opcional: descomente se gerenciar dependências localmente)
+# vendor/
