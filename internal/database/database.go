@@ -2,6 +2,7 @@ package database
 
 import (
 	"fmt"
+	"hotel-manager-api/internal/models"
 	"log"
 	"os"
 
@@ -36,5 +37,7 @@ func Connect() {
 
 	DB = database
 
-	fmt.Print("Conection sucessful")
+	database.AutoMigrate(&models.Room{})
+
+	fmt.Print("Connection successful")
 }
